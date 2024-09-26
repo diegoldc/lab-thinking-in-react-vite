@@ -15,7 +15,7 @@ function ProductsPage() {
 
     <>
     
-    <h1>IronStore</h1>
+    <h1 className="text-3xl font-bold underline">IronStore</h1>
 
     <SearchBar searchNombre={searchNombre} setSearchNombre={setSearchNombre} isInStock={isInStock} setIsInStock={setIsInStock}/>
 

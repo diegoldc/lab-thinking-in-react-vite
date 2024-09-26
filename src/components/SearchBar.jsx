@@ -9,6 +9,7 @@ function SearchBar({ searchNombre, setSearchNombre, isInStock, setIsInStock }) {
       <div>SearchBar</div>
       <div>
         <input
+        style={{backgroundColor:"lightgray"}}
           type="text"
           value={searchNombre}
           onChange={(e) => setSearchNombre(e.target.value)}

@@ -1,15 +1,10 @@
-
-function ProductRow({product}) {
+function ProductRow({ product }) {
   return (
     <>
-    <div style={{ display: "flex", justifyContent: "space-around", padding: "8px 0" }}>
-      <div style={{color: product.inStock ? "black" : "red"}}>{product.name}</div>
-      <div>{product.price}</div>
-    </div>
-    <hr />
-    
+      <td style={{color: !product.inStock ? "red" : "black"}} className="px-4 py-2 border-b">{product.name}</td>
+      <td className="px-4 py-2 border-b">{product.price}</td>
     </>
-  )
+  );
 }
 
-export default ProductRow
+export default ProductRow;
